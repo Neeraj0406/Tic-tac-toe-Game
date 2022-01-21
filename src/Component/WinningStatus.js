@@ -24,7 +24,7 @@ const winningStatus = ({ winner, current }) => {
             Turn
           </>
         )}
-        {noMovesLeft && "Match is tied"}
+        {!winner && noMovesLeft && "Match is tied"}
       </h2>
     </div>
   );
