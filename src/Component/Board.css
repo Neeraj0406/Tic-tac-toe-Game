@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: thistle;
+}
+h1 {
+  text-align: center;
+  background-color: rgb(19, 12, 61);
+  color: white;
+  padding: 10px;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.container {
+  margin-top: 40px;
+}
+.container-row {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.btn {
+  width: 80px;
+  font-size: 1.3rem;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 5px solid white;
+  box-sizing: border-box;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.container .container-row:last-child .btn {
+  border-bottom: none;
+}
+.container-row .btn {
+  border-right: 5px solid white;
+}
+.btn:last-child {
+  border-right: none;
+}
+.message {
+  text-align: center;
+  margin-top: 30px;
+}
+.newGameStart {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.start_btn {
+  padding: 10px;
+}
+.statusMessage {
+  padding-top: 30px;
+}
+.green-text {
+  color: green;
+}
+.red-text {
+  color: red;
+}
+.history_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.lists_li {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  list-style-type: square;
+}
+.lists_li:hover {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.li_active {
+  font-size: 1.2rem;
+  color: white;
+}
+.start_btn {
+  font-size: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: width 2s, height 2s, background-color 1s, transform 1s;
+  font-weight: bold;
+}
+.start_btn_active {
+  background-color: cornflowerblue;
+}
+
+.start_btn:hover {
+  color: white;
+  background-color: cornflowerblue;
+}
